@@ -16,11 +16,11 @@ android {
     compileSdkVersion 36
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = 11
+        jvmTarget = 17
     }
 
     sourceSets {
@@ -34,9 +34,8 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-    dependencies {
-        compileOnly rootProject.findProject(":flutter_plugin_android_lifecycle")
-    }
+    buildToolsVersion '36.0.0'
+    ndkVersion '29.0.14206865'
 }
 
 dependencies {
