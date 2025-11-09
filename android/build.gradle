@@ -13,7 +13,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace "org.jezequel.secure_application"
-    compileSdkVersion 31
+    compileSdkVersion 36
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
